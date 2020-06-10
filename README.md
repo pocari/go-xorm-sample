@@ -33,7 +33,7 @@ mysql -h db -uroot -t test-db_development
 # sample driver
 
 ```
-# foosテーブルから何件か取得
+# hogesテーブルにデータ作ってそれらを取得
 go run cmd/xorm-check/main.go
 ```
-
+https://gitea.com/xorm/xorm
