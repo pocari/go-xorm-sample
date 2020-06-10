@@ -30,23 +30,10 @@ migrate -source file://db/migrations -database 'mysql://root:@tcp(db:3306)/test-
 mysql -h db -uroot -t test-db_development
 ```
 
-# test data
-
-```
-insert into hoges (name) values ('name-1');
-insert into hoges (name) values ('name-2');
-insert into hoges (name) values ('name-3');
-insert into hoges (name) values ('name-4');
-
-insert into foos (field1, created_at, updated_at) values ('field1-1', now(), now())
-insert into foos (field1, created_at, updated_at) values ('field1-2', now(), now());
-insert into foos (field1, created_at, updated_at) values ('field1-3', now(), now());
-```
-
 # sample driver
 
 ```
 # foosテーブルから何件か取得
-go run cmd/sqlboiler-check/main.go
+go run cmd/xorm-check/main.go
 ```
 
